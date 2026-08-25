@@ -7,6 +7,8 @@ import { FaqAccordion } from "@/components/faq-accordion";
 import { DownloadCta } from "@/components/download-cta";
 import { Footer } from "@/components/footer";
 
+// landing page
+
 export default function Home() {
   return (
     <>
