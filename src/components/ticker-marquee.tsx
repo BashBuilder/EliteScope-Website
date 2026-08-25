@@ -25,8 +25,8 @@ export function TickerMarquee() {
   const row = [...items, ...items];
   return (
     <div className="relative overflow-hidden border-y border-hairline-soft bg-surface/40 py-3">
-      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-void to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-void to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-linear-to-r from-void to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-linear-to-l from-void to-transparent" />
       <div className="animate-marquee flex w-max motion-reduce:animate-none">
         {row.map((it, i) => (
           <Chip key={i} {...it} />
